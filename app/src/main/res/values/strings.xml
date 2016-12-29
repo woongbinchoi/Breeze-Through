@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">StressReliefAPP</string>
+    <string name="image_icon">image_icon</string>
+    <string name="derp_derpsen">Derp Derpsen</string>
+    <string name="sois_comme_l_eau_mon_ami">Sois comme l\'eau mon ami</string>
+    <string name="mononc_j">Mononc\' J</string>
+    <string name="contentimage">contentimage</string>
+    <string name="sub_image">sub_image</string>
+    <string name="ldad">LDAD</string>
+    <string name="stress_main_image">stress_main_image</string>
+</resources>
