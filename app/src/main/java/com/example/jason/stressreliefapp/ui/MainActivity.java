@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-
 import com.example.jason.stressreliefapp.R;
 import com.example.jason.stressreliefapp.adapter.DerpAdapter;
 import com.example.jason.stressreliefapp.model.DerpData;
