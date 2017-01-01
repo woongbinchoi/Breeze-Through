@@ -11,6 +11,7 @@ import com.example.jason.stressreliefapp.DatabaseHelper;
 import com.example.jason.stressreliefapp.R;
 import com.example.jason.stressreliefapp.adapter.DerpAdapter;
 import com.example.jason.stressreliefapp.adapter.DetailAdapter;
+import com.example.jason.stressreliefapp.model.DepressionData;
 import com.example.jason.stressreliefapp.model.DetailData;
 import com.example.jason.stressreliefapp.model.ListItem;
 import com.example.jason.stressreliefapp.model.StressData;
@@ -22,6 +23,7 @@ public class DetailActivity extends AppCompatActivity implements DetailAdapter.I
     private static final String Bundle_Extras = "Bundle_Extras";
     private static final String Extra_quote = "Extra_quote";
     private static final String Extra_Altr = "Extra_atir";
+    private static final String Extra_Image = "Extra_Image";
 
     //for checking the stress type
     private static final String Bundle_Main = "Bundle_Main";
@@ -43,6 +45,8 @@ public class DetailActivity extends AppCompatActivity implements DetailAdapter.I
         Bundle extras = getIntent().getBundleExtra(Bundle_Main);
         if (extras.getString(Extra_Type).equals("Anxiety")) {
             listData = (ArrayList)DetailData.getListData();
+        } else if (extras.getString(Extra_Type).equals("Depression")) {
+            listData = (ArrayList) DepressionData.getListData();
         } else {
             listData = (ArrayList) StressData.getListData();
         }
@@ -65,6 +69,7 @@ public class DetailActivity extends AppCompatActivity implements DetailAdapter.I
         Bundle extras = new Bundle();
         extras.putString(Extra_quote, item.getTitle());
         extras.putString(Extra_Altr, item.getSubTitle());
+        extras.putInt(Extra_Image, item.getImageResid());
 
         j.putExtra(Bundle_Extras, extras);
 

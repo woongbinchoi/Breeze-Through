@@ -26,15 +26,13 @@ public class DerpData {
 
         //Repeat process 4 times, so that we have enough data to demonstrate a scrollable
         //RecyclerView
-        for (int x = 0; x < 4; x++) {
             //create ListItem with dummy data, then add them to our List
-            for (int i = 0; i < titles.length; i++) {
-                ListItem item = new ListItem();
-                item.setImageResid(icon[i]);
-                item.setTitle(titles[i]);
-                item.setSubTitle(subTitles[i]);
-                data.add(item);
-            }
+        for (int i = 0; i < titles.length; i++) {
+            ListItem item = new ListItem();
+            item.setImageResid(icon[i]);
+            item.setTitle(titles[i]);
+            item.setSubTitle(subTitles[i]);
+            data.add(item);
         }
         return data;
     }
