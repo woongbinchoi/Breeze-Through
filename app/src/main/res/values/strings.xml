@@ -8,4 +8,7 @@
     <string name="sub_image">sub_image</string>
     <string name="ldad">LDAD</string>
     <string name="stress_main_image">stress_main_image</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

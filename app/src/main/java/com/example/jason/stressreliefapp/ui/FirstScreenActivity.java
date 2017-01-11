@@ -26,7 +26,7 @@ public class FirstScreenActivity extends AppCompatActivity {
             Intent i = new Intent(this, MainActivity.class);
             startActivity(i);
         }
-        else if (button_text.equals("Credit")) {
+        else if (button_text.equals("Developers")) {
             Intent i = new Intent(this, CreditActivity.class);
             startActivity(i);
         }
