@@ -11,6 +11,7 @@
         <activity android:name=".ui.FirstScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -19,6 +20,10 @@
         <activity android:name=".ui.ItemDetailActivity" />
         <activity android:name=".ui.TestActivity" />
         <activity android:name=".ui.CreditActivity" />
+        <activity android:name=".ui.QuizzActivity" />
+        <activity android:name=".ui.QuizDepActivity" />
+        <activity android:name=".ui.QuizStrActivity" />
+        <activity android:name=".ui.SolutionActivitiy"></activity>
     </application>
 
 </manifest>

@@ -42,8 +42,11 @@ public class DetailData {
 
     private static final String[] content = {"quote content", "Story Content", "Video Link" ,"Image Link"};
 
-    private static final int[] icon = {R.drawable.dont_obsess, R.drawable.ic_tonality_black_24dp,
-            R.drawable.ic_tonality_black_24dp, R.drawable.anxiety_appointment};
+    private static final int[] icon = {
+            R.drawable.dont_obsess,
+            R.drawable.ic_tonality_black_24dp,
+            R.drawable.ic_tonality_black_24dp,
+            R.drawable.anxiety_appointment};
 
     public static List<ListItem> getListData() {
         List<ListItem> data = new ArrayList<>();
