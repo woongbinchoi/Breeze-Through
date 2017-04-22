@@ -31,7 +31,9 @@ public class QuizzActivity extends AppCompatActivity {
                 startActivity(i);
                 break;
             case "Yes":
-                Intent j = new Intent(this, MainActivity.class);
+                Intent j = new Intent(this, SolutionActivitiy.class);
+                j.putExtra("Type", "ANX");
+                j.putExtra("Int", anxnum%4);
                 startActivity(j);
                 break;
             case "No":
@@ -42,6 +44,7 @@ public class QuizzActivity extends AppCompatActivity {
                     question.setString("Anxiety", anxnum++);
                     tv.setText(question.toString());
                 }
+                break;
 
         }
     }

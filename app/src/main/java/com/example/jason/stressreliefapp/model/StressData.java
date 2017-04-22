@@ -11,6 +11,10 @@ import java.util.List;
 
 public class StressData {
 
+    private String Title;
+    private String Content;
+    private int Picture;
+
     private static final String[] titles = {"Motivational quote - Stress",
             "Inspirational quote - Stress",
             "Inspirational quote - Stress" ,
@@ -42,5 +46,22 @@ public class StressData {
             data.add(item);
         }
         return data;
+    }
+
+
+    public void setcontents(String str, int num){
+        Title = titles[num];
+        Content = subTitles[num];
+        Picture = icon[num];
+    }
+
+    public String toTitle(){
+        return String.format("%s", Title);
+    }
+    public String toContent(){
+        return String.format("%s", Content);
+    }
+    public int toImage() {
+        return Picture;
     }
 }

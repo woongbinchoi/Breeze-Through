@@ -31,7 +31,9 @@ public class QuizDepActivity extends AppCompatActivity {
                 startActivity(i);
                 break;
             case "Yes":
-                Intent j = new Intent(this, MainActivity.class);
+                Intent j = new Intent(this, SolutionActivitiy.class);
+                j.putExtra("Type", "DEP");
+                j.putExtra("Int", depnum % 4);
                 startActivity(j);
                 break;
             case "No":
@@ -42,6 +44,7 @@ public class QuizDepActivity extends AppCompatActivity {
                     question.setString("Depression", depnum++);
                     tv.setText(question.toString());
                 }
+                break;
         }
     }
 }

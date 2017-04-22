@@ -6,6 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DetailData {
+
+    private String Title;
+    private String Content;
+    private int Picture;
+
     private static final String[] titles = {"Don't obsess over a decision",
             "Hang in there",
             "My Story with Social Anxiety, where I was, and am now with the illness." ,
@@ -44,8 +49,8 @@ public class DetailData {
 
     private static final int[] icon = {
             R.drawable.dont_obsess,
-            R.drawable.ic_tonality_black_24dp,
-            R.drawable.ic_tonality_black_24dp,
+            R.drawable.depression_quote2,
+            R.drawable.depression_quote1,
             R.drawable.anxiety_appointment};
 
     public static List<ListItem> getListData() {
@@ -60,5 +65,21 @@ public class DetailData {
             data.add(item);
         }
         return data;
+    }
+
+    public void setcontents(String str, int num){
+        Title = titles[num];
+        Content = subTitles[num];
+        Picture = icon[num];
+    }
+
+    public String toTitle(){
+        return String.format("%s", Title);
+    }
+    public String toContent(){
+        return String.format("%s", Content);
+    }
+    public int toImage() {
+        return Picture;
     }
 }

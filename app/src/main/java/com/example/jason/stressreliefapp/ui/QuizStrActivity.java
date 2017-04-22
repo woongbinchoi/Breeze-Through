@@ -31,7 +31,9 @@ public class QuizStrActivity extends AppCompatActivity {
                 startActivity(i);
                 break;
             case "Yes":
-                Intent j = new Intent(this, MainActivity.class);
+                Intent j = new Intent(this, SolutionActivitiy.class);
+                j.putExtra("Type", "STR");
+                j.putExtra("Int", strnum%4);
                 startActivity(j);
                 break;
             case "No":
@@ -42,6 +44,7 @@ public class QuizStrActivity extends AppCompatActivity {
                     question.setString("Stress", strnum++);
                     tv.setText(question.toString());
                 }
+                break;
 
         }
     }
